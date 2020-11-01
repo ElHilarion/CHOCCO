@@ -1,0 +1,10 @@
+.reviews-section {
+  position: relative;
+  background: url("../img/decorations/raspb-1.png") right top 57% no-repeat;
+}
+.reviews-section:before {
+  content: url("../img/decorations/side-leaf2.png");
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+}

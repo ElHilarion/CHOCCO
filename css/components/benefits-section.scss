@@ -1,0 +1,11 @@
+.benefits-section{
+    position: relative;
+    background: url("../img/decorations/side-leaf.png") left top 57% no-repeat;    
+
+    &:before{
+        content: url("../img/decorations/bar-and-raspb.png");
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+    }
+}
