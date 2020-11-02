@@ -24,10 +24,16 @@
     align-items: center;
 }
 
-.phone-number__icon-element{
+.phone-number__icon{
     width: 13px;
     height: 13px;
-    margin-right: 6px;
+
+    &:before{
+        content: url("../img/icons/phone.svg");
+        position: relative;
+        bottom: 75%;
+        right: 60%;
+    }
 }
 
 .menu__link{
