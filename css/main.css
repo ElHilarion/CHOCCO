@@ -440,6 +440,24 @@ img {
   margin-top: 6%;
 }
 
+.decoration__berry {
+  position: absolute;
+  bottom: -3%;
+  left: -7.5%;
+}
+
+.decoration__leaf {
+  position: absolute;
+  bottom: -4%;
+  right: -17%;
+}
+
+.decoration__blackberry {
+  position: absolute;
+  top: -48%;
+  right: -19%;
+}
+
 .form {
   display: flex;
 }
