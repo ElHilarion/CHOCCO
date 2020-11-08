@@ -1,37 +1,58 @@
 .reviews__display{
     background: #F8FAF9;
-    padding: 42px 42px;
+    padding: rem(42px) rem(42px);
     overflow: hidden;
     position: relative;
+
+    @include tablets{
+        margin: 0 -58px;
+    }
     
     &:before{
         content: url("");
         display: block;
-        width: 83px;
-        height: 83px;
+        width: rem(83px);
+        height: rem(83px);
         background: #fff;
         border-radius: 50%;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: -58px;
+        top: rem(-58px);
     }
 }
 
 .reviews__display-inner{
     display: flex;
 
-    &:after{
+    &:before{
         content: url("../img/decorations/leaf-with-strawberries.png");
         position: absolute;
-        right: 0;
+        right: 0%;
         top: 2%;
+    }
+
+    @include tablets{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    @include phones{
+        &:before{
+            right:-5%;
+        }
     }
 }
 
 .reviews__avatar{
-    width: 253px;
-    height: 264px;
+    width: rem(253px);
+    height: rem(264px);
+
+    @include tablets{
+    width: rem(130px);
+    height: rem(132px);
+    }
 }
 
 .reviews__avatar-img{
@@ -42,23 +63,31 @@
 
 .reviews__content{
     flex: 1;
-    margin-left: 36px;
+    margin: 0 2%;
+
+    @include tablets{
+        margin: 5% 2% 0 2%;
+    }
 }
 
 .reviews__title{
     font-weight: bold;
-    font-size: 27px;
-    margin-bottom: 18px;
+    font-size: rem(27px);
+    margin-bottom: rem(18px);
     color: #000;
 }
 
 .reviews__text{
-    margin-bottom: 25px;
-    margin-right: 280px;
+    margin-bottom: 2%;
+    margin-right: 47%;
+    
+    @include tablets{
+        margin: 2% -5% 2% -5%;
+    }
 }
 
 .reviews__author{
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: bold;
     color: #000;
 }
@@ -66,9 +95,10 @@
 .reviews__switcher{
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: rem(25px);
 
     &-item{
-        margin-left: 6px;
+        margin-left: rem(6px);
     }
+
 }

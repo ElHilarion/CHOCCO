@@ -1,12 +1,18 @@
 .reviews-section{
     background: url("../img/decorations/raspb-1.png") right top 12% no-repeat;  
-    position: relative;  
+    position: relative; 
+    height: 976px; 
   
     
     &:before{
         content:url("../img/decorations/side-leaf2.png");
         position: absolute;
-        top: 88%;
+        bottom: -25%;
+
+        @include phones{
+            content: url("../img/decorations/side-leaf2.2.png");
+            bottom: -15%;
+        }
     }
 }
 
@@ -14,7 +20,15 @@
     &:after{
         content:url("../img/decorations/raspb-2.png");
         position: absolute;
-        bottom: -23%;
+        bottom: -17%;
+
+        @include tablets{
+            bottom: -17%;
+        }
+        @include phones{
+            content: url("../img/decorations/raspb-2.2.png");
+            bottom: -12%;
+        }
     }   
 }
 

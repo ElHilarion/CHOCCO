@@ -1,11 +1,25 @@
 .benefits-section{
-    position: relative;
-    background: url("../img/decorations/side-leaf.png") left top 57% no-repeat;    
+    position: relative; 
+    background: url("../img/decorations/side-leaf.png") left top 57% no-repeat;   
+    
+    @include tablets{
+        background-position: left bottom 95%;
+    }
+
+    @include phones{
+        height: 906px;
+        background: none;
+    }
 
     &:before{
         content: url("../img/decorations/bar-and-raspb.png");
         position: absolute;
-        bottom: -100px;
+        max-width: 100%;
+        bottom: rem(-100px);
         left: 0;
+
+        @include phones{
+            display: none;
+        }
     }
 }

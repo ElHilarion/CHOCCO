@@ -1,25 +1,46 @@
 .order-section{
     background: url("../img/pattern1.jpg");
+    height: 852px;
     margin-top: 6%;
+
+    @include tablets{
+        height: 760px;
+    }
 }
-
-
-//decoration elements//
 
 .decoration__berry{
     position: absolute;
-    bottom: -3%;
-    left: -7.5%;
+    bottom: 22%;
+    left: 7.5%;
+
+    @include tablets{
+        display: none;
+    }
 }
 
 .decoration__leaf{
     position: absolute;
-    bottom: -4%;
-    right: -17%;
+    bottom: 22%;
+    right: 4%;
+
+    @include tablets{
+        display: none;
+    }
 }
 
 .decoration__blackberry{
     position: absolute;
-    top: -48%;
-    right: -19%;
+    bottom:35%;
+    right: 0;
+
+    @include tablets{
+        content: url("../img/decorations/blc-2.png");
+        width: 109,14px;
+        height: 147px;
+        bottom: 33%;
+    }
+    @include phones{
+        bottom: 31%;
+    }
+
 }
