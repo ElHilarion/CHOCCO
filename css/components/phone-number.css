@@ -1,0 +1,17 @@
+.phone-number {
+  font-size: 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.phone-number__icon {
+  width: 13px;
+  height: 13px;
+}
+.phone-number__icon:before {
+  content: url("../img/icons/phone.svg");
+  position: relative;
+  bottom: 75%;
+  right: 60%;
+}

@@ -2,50 +2,104 @@
     background: url("../img/decorations/big-leaf.png") right bottom no-repeat;
     background-color: $blue;
     height: 100vh;
-    min-height: 650px;
+    min-height: 40.625rem;
     color:  #FFFFFF;
     position: relative;
 
-    &:before{
-        position: absolute;
-        bottom: -41px;
-        left: 2%;
-        content: url("../img/decorations/small-life.png");
-    }
-
-    &:after{
-        content: 
-        url("../img/choco-decor.png");
-        position: absolute;
-        bottom: -40px;
-        right: 126px;
-        ;
+    @include tablets{
+        height: 1000px;
+        background-position: right bottom 78%;
+          
     }
 }
 
+
+
+.hero__deco-1{
+    max-width: 100%;
+    position: absolute;
+    bottom: -2.563rem;
+    left: 2%;
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.hero__deco-2{
+    max-width: 100%;
+    position: absolute;
+    bottom: -2.5rem;
+    right: 7.875rem;
+
+    @include tablets{
+        display: none;
+    }
+}
+
+
+
 .hero__title-section{
-    width: 30%;
+    width: 36%;
+
+    @include tablets{
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     
+        &:before{
+            content: "";
+            width: rem(316px);
+            height: rem(330px);
+            background: url("../img/chocco-deco-2.png") center center / contain no-repeat;
+            margin-bottom: rem(16px);
+        }
+    }
+
+    
+}
+
+.hero__icons-section{
+    @include tablets{
+        display: none;
+    }
 }
 
 .hero__container{
-    display: flex;
+    display:flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
     padding: 24px 0 50px 0;
-    background: url("") right center / 50% no-repeat ;
+    background: url("") right center / 50% no-repeat;
 }
 
 .hero__main-title{
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 1.1;
     font-weight: bold;
-    margin-bottom: 17px;
+    margin-bottom: 1.063rem;
     text-transform: uppercase;
+
+    @include tablets{
+        font-size: 2.3rem;
+    }
 }
 
 .hero__title-desc{
-    font-size: 21px;
-    margin-bottom: 32px;
-    margin-right: 15%;
+    font-size: 1.313rem;
+    margin-bottom: 2rem;
+    margin-right: 0.2rem;
+
+    @include tablets{
+        padding: 0 16%;
+    }
+
+    @include phones{
+        padding: 0 1%;
+    }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=1000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CHOCCO</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -12,6 +12,8 @@
         <div class="maincontent">
 
             <section class="hero">
+                <img src="img/decorations/small-life.png" class="hero__deco-1">
+                <img src="img/chocco-deco-1.png" class="hero__deco-2">
                 <div class="container hero__container">
                     <header class="header">
                         <img src="img/logo.png" alt="chocco logo" class="logo">
@@ -26,9 +28,18 @@
                                 <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
                             </ul>
                         </nav>
-                        <a href="tel:+78009039090" class="phone-number">
-                            <span class="phone-number__icon"></span>
+                        <a href="tel:+78009039090" class="phone-number header__phone-number">
+                            <span class="phone-number__icon">
+                                <svg class="phone-icon">
+                                    <use xlink:href="/sprite.svg#phone"></use>
+                                </svg>
+                            </span>
                             <span class="phone-number__text">8 800 903 90 90</span>
+                        </a>
+                        <a href="" class="hamburger">
+                            <span class="hamburger__plank"></span>
+                            <span class="hamburger__plank"></span>
+                            <span class="hamburger__plank"></span>
                         </a>
                     </header>
                     <div class="hero__title-section">
@@ -173,10 +184,10 @@
                 </div>
             </section>
             <div class="section order-section section--font-color--green">
+                <img src="img/decorations/berry.png" class="decoration__berry">
+                <img src="img/decorations/leaf-03.png" class="decoration__leaf">
+                <img src="img/decorations/blackberry.png" class="decoration__blackberry">
                 <div class="container">
-                    <img src="img/decorations/berry.png" class="decoration__berry">
-                    <img src="img/decorations/leaf-03.png" class="decoration__leaf">
-                    <img src="img/decorations/blackberry.png" class="decoration__blackberry">
                     <h2 class="section__title">Закажите доставку</h2>
                     <form class="form">
                         <div class="form__col">
@@ -252,6 +263,29 @@
                     </form>
                 </div>
             </div>
+            <section class="section map-section">
+                <div class="map"></div>
+                <footer class="footer">
+                    <div class="container footer__container">
+                        <address class="contacts">
+                            <div class="contacts__place">
+                                <p>Москва, ул. Новый Арбат, д. 31/12</p>
+                            </div>
+                            <a href="tel:+78009039090" class="phone-number">
+                                <span class="phone-number__icon contacts__icon"></span>
+                                <span class="phone-number__text contacts__phone">8 800 903 90 90</span>
+                            </a>
+                        </address>
+                        
+                        <ul class="social">
+                            <a href="" class="socila__icon"><img src="img/icons/vk.svg" class="social__icon-image"></a>
+                            <a href="" class="socila__icon"><img src="img/icons/fb.svg" class="social__icon-image icon-1"></a>
+                            <a href="" class="socila__icon"><img src="img/icons/in.svg" class="social__icon-image"></a>
+                            <a href="" class="socila__icon"><img src="img/icons/tv.svg" class="social__icon-image"></a>
+                        </ul>
+                    </div>
+                </footer>
+            </section>
         </div>
         <nav class="fixed-menu">
             <ul class="fixed-menu__list">
