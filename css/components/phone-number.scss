@@ -6,16 +6,7 @@
 }
 
 .phone-number__icon{
-    width: 13px;
-    height: 13px;
-    flex-shrink: 0;
-    /*
-    &:before{
-        //content: url("../img/icons/phone.svg");
-        position: relative;
-        bottom: 75%;
-        right: 60%;
-    }*/
+    margin-right: rem(5px);
 }
 
 .phone-number__text{
@@ -23,9 +14,9 @@
 }
 
 .phone-icon{
-    fill: red;
-    width: 50px;
-    height: 50px;
+    fill: #fff;
+    width: 15px;
+    height: 15px;
 }
 
 

@@ -4,12 +4,29 @@
 }
 
 .feature__icon{
-    width: rem(41px);
     margin-right: rem(11px);
 }
-
-
 .feature__text{
     font-size: rem(16px);
     max-width: rem(114px);
+}
+
+
+
+.leaf-icon{
+    width:39px; 
+    height:37px;
+    fill:#181b1b;
+}
+
+.truck-icon{
+    fill: #C6F7FF;
+    width:39px; 
+    height:37px;
+}
+
+.measure-icon{
+    fill: #C6F7FF;
+    width:39px; 
+    height:37px;
 }

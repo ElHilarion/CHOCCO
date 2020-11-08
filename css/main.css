@@ -250,16 +250,7 @@ img {
 }
 
 .phone-number__icon {
-  width: 13px;
-  height: 13px;
-  flex-shrink: 0;
-  /*
-  &:before{
-      //content: url("../img/icons/phone.svg");
-      position: relative;
-      bottom: 75%;
-      right: 60%;
-  }*/
+  margin-right: 0.2777777778rem;
 }
 
 .phone-number__text {
@@ -267,9 +258,9 @@ img {
 }
 
 .phone-icon {
-  fill: red;
-  width: 50px;
-  height: 50px;
+  fill: #fff;
+  width: 15px;
+  height: 15px;
 }
 
 .hamburger {
@@ -308,13 +299,30 @@ img {
 }
 
 .feature__icon {
-  width: 2.2777777778rem;
   margin-right: 0.6111111111rem;
 }
 
 .feature__text {
   font-size: 0.8888888889rem;
   max-width: 6.3333333333rem;
+}
+
+.leaf-icon {
+  width: 39px;
+  height: 37px;
+  fill: #181b1b;
+}
+
+.truck-icon {
+  fill: #C6F7FF;
+  width: 39px;
+  height: 37px;
+}
+
+.measure-icon {
+  fill: #C6F7FF;
+  width: 39px;
+  height: 37px;
 }
 
 .btn {
@@ -467,6 +475,24 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.happy-icon {
+  width: 68;
+  height: 69;
+  fill: #292929;
+}
+
+.smiley-icon {
+  fill: #292929;
+  width: 64;
+  height: 64;
+}
+
+.muscle-icon {
+  fill: #292929;
+  width: 64;
+  height: 64;
 }
 
 .benefits-section {
