@@ -9,7 +9,9 @@
             border-radius: rem(5px);
 
             &:before{
-                background: url("../img/icons/tick.png") center center no-repeat;
+                background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9.45.552A1.636 1.636 0 007.064.46L3.67 3.862l-.734-.736c-.642-.643-1.743-.643-2.386 0H.46c-.642.644-.642 1.747 0 2.391L2.477 7.54c.367.368.826.46 1.193.46.458 0 .825-.184 1.192-.46L9.45 2.942c.642-.643.642-1.747 0-2.39z' fill='%23497870'/%3e%3c/svg%3e") center center no-repeat;
+                width: 12px;
+                height: 10px;
             }
         }
     }

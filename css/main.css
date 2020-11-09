@@ -257,12 +257,6 @@ img {
   white-space: nowrap;
 }
 
-.phone-icon {
-  fill: #fff;
-  width: 15px;
-  height: 15px;
-}
-
 .hamburger {
   width: 24px;
   height: 20px;
@@ -305,24 +299,6 @@ img {
 .feature__text {
   font-size: 0.8888888889rem;
   max-width: 6.3333333333rem;
-}
-
-.leaf-icon {
-  width: 39px;
-  height: 37px;
-  fill: #181b1b;
-}
-
-.truck-icon {
-  fill: #C6F7FF;
-  width: 39px;
-  height: 37px;
-}
-
-.measure-icon {
-  fill: #C6F7FF;
-  width: 39px;
-  height: 37px;
 }
 
 .btn {
@@ -469,30 +445,10 @@ img {
 }
 
 .benefit__icon {
-  width: 3.8888888889rem;
-  height: 3.5555555556rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.happy-icon {
-  width: 68;
-  height: 69;
-  fill: #292929;
-}
-
-.smiley-icon {
-  fill: #292929;
-  width: 64;
-  height: 64;
-}
-
-.muscle-icon {
-  fill: #292929;
-  width: 64;
-  height: 64;
 }
 
 .benefits-section {
@@ -839,7 +795,9 @@ img {
   border-radius: 0.2777777778rem;
 }
 .radio--checkbox .radio__visible:before {
-  background: url("../img/icons/tick.png") center center no-repeat;
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9.45.552A1.636 1.636 0 007.064.46L3.67 3.862l-.734-.736c-.642-.643-1.743-.643-2.386 0H.46c-.642.644-.642 1.747 0 2.391L2.477 7.54c.367.368.826.46 1.193.46.458 0 .825-.184 1.192-.46L9.45 2.942c.642-.643.642-1.747 0-2.39z' fill='%23497870'/%3e%3c/svg%3e") center center no-repeat;
+  width: 12px;
+  height: 10px;
 }
 
 .radio__elem {
@@ -957,7 +915,6 @@ img {
 }
 
 .contacts__icon {
-  background: url("../img/icons/phone-green.svg") no-repeat;
   margin: 5px 5px;
 }
 
@@ -977,4 +934,68 @@ img {
   width: 1.3888888889rem;
   height: 1.3888888889rem;
   margin-left: 14px;
+}
+
+.phone-icon {
+  fill: #fff;
+  width: 15px;
+  height: 15px;
+}
+
+.leaf-icon {
+  fill: #C6F7FF;
+  width: 39px;
+  height: 37px;
+}
+
+.truck-icon {
+  fill: #C6F7FF;
+  width: 40px;
+  height: 32px;
+}
+
+.measure-icon {
+  fill: #C6F7FF;
+  width: 41px;
+  height: 41px;
+}
+
+.happy-icon {
+  fill: #292929;
+  width: 68px;
+  height: 69px;
+}
+
+.smiley-icon {
+  fill: #292929;
+  width: 64px;
+  height: 64px;
+}
+
+.muscle-icon {
+  fill: #292929;
+  width: 68px;
+  height: 68px;
+}
+
+.phone-icon--green {
+  fill: #497870;
+  width: 15px;
+  height: 15px;
+}
+
+.vk-icon,
+.fb-icon,
+.in-icon,
+.tv-icon {
+  fill: #B3B3B3;
+  width: 20;
+  height: 20;
+}
+
+.vk-icon:hover,
+.fb-icon:hover,
+.in-icon:hover,
+.tv-icon:hover {
+  fill: #000;
 }
