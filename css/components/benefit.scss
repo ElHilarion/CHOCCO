@@ -20,32 +20,15 @@
     background: #F2F5F4;
     border-radius: 50%;
     overflow: hidden;
+    
 }
 
 .benefit__icon{
-    width: rem(70px);
-    height: rem(64px);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.happy-icon{
-    width:68; 
-    height:69;
-    fill: #292929;
-}
 
-.smiley-icon{
-    fill:#292929;
-    width:64; 
-    height:64;
-}
-
-.muscle-icon{
-    fill:#292929;
-    width:64; 
-    height:64;
-}
 
