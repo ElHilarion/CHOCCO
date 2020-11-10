@@ -9,7 +9,7 @@
     display: inline-block;
     border: none;
 
-    &--theme--white{
+    &__theme--white{
         background: #ffffff;
         color: $darkGreen;
 
@@ -19,7 +19,7 @@
         }
     }
 
-    &--theme--green{
+    &__theme--green{
         background: $darkGreen;
         color: #fff;
 
@@ -29,7 +29,7 @@
         }
     }
 
-    &--theme--transparent{
+    &__theme--transparent{
         background: transparent;
         color: #000;
         text-transform: none;

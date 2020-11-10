@@ -312,28 +312,28 @@ img {
   display: inline-block;
   border: none;
 }
-.btn--theme--white {
+.btn__theme--white {
   background: #ffffff;
   color: #365A49;
 }
-.btn--theme--white:hover {
+.btn__theme--white:hover {
   color: #ffffff;
   background: #365A49;
 }
-.btn--theme--green {
+.btn__theme--green {
   background: #365A49;
   color: #fff;
 }
-.btn--theme--green:hover {
+.btn__theme--green:hover {
   color: #365A49;
   background: #fff;
 }
-.btn--theme--transparent {
+.btn__theme--transparent {
   background: transparent;
   color: #000;
   text-transform: none;
 }
-.btn--theme--transparent:hover {
+.btn__theme--transparent:hover {
   color: #365A49;
 }
 
