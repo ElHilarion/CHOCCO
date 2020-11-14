@@ -10,13 +10,12 @@ $phones: 480px;
 $blue: #61C4D9;
 $darkGreen: #365A49;
 
-
 //media
 @import "media.scss";
 
 //z-indexes
 
-$z-fixed-menu: 100;
+$z-fixed-menu: 90;
 
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
@@ -30,7 +29,6 @@ $z-fixed-menu: 100;
 @import "components/header.scss";
 @import "components/menu.scss";
 @import "components/phone-number.scss";
-@import "components/hamburger.scss";
 @import "components/features.scss";
 @import "components/feature.scss";
 @import "components/btn.scss";
@@ -48,6 +46,7 @@ $z-fixed-menu: 100;
 @import "components/fixed__menu.scss";
 @import "components/map-section.scss";
 @import "components/footer.scss";
+@import "burger-menu.scss";
 
 
 @import "icons-svg.scss";
