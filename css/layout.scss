@@ -32,7 +32,8 @@ body{
 }
 
 .container{
-    width: $containerWidth;
+    width: 95%;
+    max-width: $containerWidth;
     margin: 0 auto;
     position: relative;
 }

@@ -1,0 +1,28 @@
+.parameters {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.parameters li {
+  margin-right: rem(44px);
+}
+
+.parameters__price {
+  font-size: 60px;
+  font-weight: 300;
+  color: #000;
+}
+
+.parameters__weight {
+  margin-left: rem(15px);
+}
+
+.parameters__btn {
+  margin-top: rem(20px);
+}
+
+p.value {
+  color: #000;
+  font-weight: bold;
+}
