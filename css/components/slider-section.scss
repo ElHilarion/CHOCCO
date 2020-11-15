@@ -1,0 +1,52 @@
+.slider-section{
+    background-color:#F8FAF9;
+}
+
+.slider__display{
+    display: flex;
+    align-items: center;
+}
+
+.slider__display-block-1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.slider__decorations{
+    width: 380px;
+}
+.slider__content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 34%;
+    margin-left: 10%;
+
+    @include tablets{
+        
+    }
+}
+.slider__title{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: rem(20px);
+}
+
+.structure{
+    position: absolute;
+    width: 91px;
+    height: 91px;
+    top: -115px;
+    background: #86C3D7;
+    border-radius: 4px;
+}
+
+.structure__title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin: -15px 18px;
+}

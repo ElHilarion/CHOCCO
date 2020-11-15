@@ -25,28 +25,41 @@ $z-fixed-menu: 90;
 @import "layout.scss";
 
 //components
+//hero//
 @import "components/hero.scss";
 @import "components/header.scss";
 @import "components/menu.scss";
 @import "components/phone-number.scss";
 @import "components/features.scss";
 @import "components/feature.scss";
-@import "components/btn.scss";
-@import "components/section.scss";
+//benefits-section//
 @import "components/headline.scss";
 @import "components/benefits.scss";
 @import "components/benefit.scss";
 @import "components/benefits-section.scss";
+//slider-section//
+@import "components/slider-section.scss";
+@import "components/slider.scss";
+@import "components/parameters.scss";
+//reviews-section//
 @import "components/reviews.scss";
 @import "components/interactive-avatar.scss";
 @import "components/reviews-section.scss";
+//order-section//
 @import "components/order-section.scss";
 @import "components/form.scss";
 @import "components/radio.scss";
-@import "components/fixed__menu.scss";
+//map-section & footer//
 @import "components/map-section.scss";
 @import "components/footer.scss";
+//fixed-menu//
+@import "components/fixed__menu.scss";
+//burger-menu//
 @import "burger-menu.scss";
 
+
+//general_style//
+@import "components/btn.scss";
+@import "components/section.scss";
 
 @import "icons-svg.scss";
