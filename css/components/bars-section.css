@@ -1,0 +1,39 @@
+.bars__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  width: 1.875rem;
+  z-index: 20;
+}
+
+.slider__btn--next {
+  right: -1.25rem;
+  transform: rotate(-90deg);
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.slider__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
