@@ -1,0 +1,161 @@
+.bars-section{
+    background: #F8FAF9;
+}
+.bars__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.slider__btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    width: 1.875rem;
+    z-index: 20;
+    margin: 0 -10%;
+
+    @include tablets{
+        top: 25%;
+        margin: 0;
+    }
+    @include phones{
+        margin: rem(-35px);
+    }
+}
+
+.slider__btn--next{
+    right: -1.25rem;
+    @include phones{
+        right: -10px;
+    }
+}
+
+
+.slider{
+    overflow: hidden;
+}
+
+.slider__list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.slider__item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablets{
+        flex-direction: column;
+    }
+}
+
+.slider__left, .slider__right{
+    width: 50%;
+    @include tablets{
+        width: 100%;
+        
+    }
+}
+.slider__left{
+    position: relative;
+    height: 22.5rem;
+    
+    @include tablets{
+        display: flex;
+        justify-content: center;
+    }
+}
+.slider__right{
+    @include tablets{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+}
+.structure{
+    position: relative;
+    background: #86C3D7;
+    width: rem(91px);
+    height: rem(91px);
+    border-radius: rem(4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @include tablets{
+        display: none;
+    }
+}
+.structure__title{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
+    margin: -15px 18px;
+}
+.slider__title{
+    padding: 0;
+    line-height: 3rem;
+    margin-bottom: 2.8125rem;
+}
+.section-title--black{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: rem(20px);
+
+    @include tablets{
+        text-align: center;
+    }
+}
+
+.slider__desc{
+    line-height: 1.5rem;
+    margin-bottom: 0.3125rem;
+    
+    @include tablets{
+        text-align: center;
+    }
+}
+
+.slider__row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include tablets{
+        justify-content: center;
+    }
+}
+
+.slider__parameters{
+    width: 100%;
+    display: -webkit-inline-box;
+    margin-top: 20px;
+
+    @include tablets{
+        display: flex;
+        justify-content: center;
+    }
+}
+.parameters{
+    margin-right: 13%;
+}
+.slider__price{
+    margin-right: 10%;
+    font-size: rem(60px);
+    font-weight: 300;
+    color: #000;
+}
