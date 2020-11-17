@@ -39,14 +39,14 @@
 }
 
 .slider__list{
-    width: 100%;
+    width: 200%;
     display: flex;
     align-items: center;
-    transition: transform 0.3s;
+    position: relative;
+    transition: right 2s;
 }
 
 .slider__item{
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,14 +65,15 @@
 }
 .slider__left{
     position: relative;
-    height: 22.5rem;
     
     @include tablets{
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 }
 .slider__right{
+    margin-left: 5%;
     @include tablets{
         display: flex;
         align-items: center;
@@ -101,7 +102,7 @@
     color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: 700;
-    margin: -15px 18px;
+    margin: 0 18px;
 }
 .slider__title{
     padding: 0;
