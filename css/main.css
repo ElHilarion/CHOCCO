@@ -376,15 +376,10 @@ img {
   position: relative;
   background: url("../img/decorations/side-leaf.png") left top 57% no-repeat;
 }
-@media screen and (max-width: 768px) {
-  .benefits-section {
-    background-position: left bottom 95%;
-  }
-}
 @media screen and (max-width: 480px) {
   .benefits-section {
-    height: 906px;
     background: none;
+    margin: 5%;
   }
 }
 .benefits-section:before {
@@ -446,14 +441,14 @@ img {
 }
 
 .slider__list {
-  width: 100%;
+  width: 200%;
   display: flex;
   align-items: center;
-  transition: transform 0.3s;
+  position: relative;
+  transition: right 2s;
 }
 
 .slider__item {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -475,15 +470,18 @@ img {
 
 .slider__left {
   position: relative;
-  height: 22.5rem;
 }
 @media screen and (max-width: 768px) {
   .slider__left {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 }
 
+.slider__right {
+  margin-left: 5%;
+}
 @media screen and (max-width: 768px) {
   .slider__right {
     display: flex;
@@ -515,7 +513,7 @@ img {
   color: white;
   font-size: 14px;
   font-weight: 700;
-  margin: -15px 18px;
+  margin: 0 18px;
 }
 
 .slider__title {
@@ -582,75 +580,6 @@ img {
   color: #000;
 }
 
-.grape__bar {
-  max-width: 100%;
-  position: relative;
-  top: -0.1111111111rem;
-  left: -0.3333333333rem;
-  z-index: 5;
-}
-@media screen and (max-width: 480px) {
-  .grape__bar {
-    top: 1.7777777778rem;
-    left: -1.5555555556rem;
-    width: 14.7277777778rem;
-    height: 15.3127777778rem;
-  }
-}
-
-.slider__ellipse-blue {
-  max-width: 100%;
-  position: absolute;
-  top: 4.1666666667rem;
-  z-index: 4;
-}
-@media screen and (max-width: 480px) {
-  .slider__ellipse-blue {
-    width: 17.2961111111rem;
-    height: 12.3372222222rem;
-    top: 4.7222222222rem;
-    left: 10px;
-  }
-}
-
-.slider__ellipse-gray {
-  max-width: 100%;
-  position: absolute;
-  top: 7.2222222222rem;
-  z-index: 3;
-}
-@media screen and (max-width: 480px) {
-  .slider__ellipse-gray {
-    width: 17.2961111111rem;
-    height: 11.2261111111rem;
-    left: 0.5555555556rem;
-  }
-}
-
-/*
-
-.parameters{
-    display: -webkit-inline-box;
-    margin-top: 20px;
-}
-.param-2{
-    margin-left: 7%;
-
-}
-p.value{
-    color: #000;
-    font-weight: bold;
-}
-.parameters__price{
-    font-size: 60px;
-    font-weight: 300;
-    color: #000;
-}
-
-.parameters__btn{
-    margin-top: 11%;
-}
-*/
 .reviews__display {
   background: #F8FAF9;
   padding: 2.3333333333rem 2.3333333333rem;
@@ -1005,7 +934,7 @@ p.value{
   background-size: cover;
   position: relative;
   width: 100%;
-  height: 872px;
+  height: 48.4444444444rem;
 }
 
 .footer {
@@ -1307,7 +1236,7 @@ p.value{
 
 .section {
   height: 100vh;
-  min-height: 36.2222222222rem;
+  min-height: 815px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1396,7 +1325,7 @@ p.value{
 .structure-icon {
   width: 48px;
   height: 48px;
-  margin: 11px 22px;
+  margin-top: -3px;
   fill: #fff;
 }
 

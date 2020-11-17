@@ -1,22 +1,22 @@
 const left = document.querySelector("#left");
-  const right = document.querySelector("#right");
-  const items = document.querySelector("#slider__display");
-  const computed = window.getComputedStyle(items);
+const right = document.querySelector("#right");
+const sliderList = document.querySelector("#slider__list");
 
-  right.addEventListener("click", function(e) {
-    e.preventDefault();
-    let currentRight = parseInt(computed.right);
+const loop = (direction, e) => {
+  e.preventDefault();
 
-    if (currentRight < 1068) {
-      items.style.right = currentRight + 1068 + "px";
-    }
-  });
+  if (direction === "right") {
+    sliderList.appendChild(sliderList.firstElementChild);
+  } else {
+    sliderList.insertBefore(sliderList.lastElementChild, sliderList.firstElementChild);
+  }
+};
 
-  left.addEventListener("click", function(e) {
-    e.preventDefault();
-    let currentRight = parseInt(computed.right);
+right.addEventListener("click", (e) => {
+  loop("right", e);
+});
 
-    if (currentRight > 0) {
-      items.style.right = currentRight - 1068 + "px";
-    }
-  });
+left.addEventListener("click", (e) => {
+  loop("left", e);
+});
+  

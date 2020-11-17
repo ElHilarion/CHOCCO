@@ -1,64 +1,7 @@
 .grape__bar {  
-    max-width: 100%;
-    position: relative;
-    top: rem(-2px);
-    left: rem(-6px);
-    z-index: 5;
 
-    @include phones{
-        top: rem(32px);
-        left: rem(-28px);
-        width: rem(265.1px);
-        height: rem(275.63px);
-    }
-
-}
-.slider__ellipse-blue { 
-    max-width: 100%;
-    position: absolute;
-    top: rem(75px);
-    z-index: 4;
-    @include phones{
-        width: rem(311.33px);
-        height: rem(222.07px);
-        top: rem(85px);
-        left: 10px;
-    }
-}
-.slider__ellipse-gray {  
-    max-width: 100%;
-    position: absolute;
-    top: rem(130px);
-    z-index: 3;
-    @include phones{
-        width: rem(311.33px);
-        height: rem(202.07px);
-        left: rem(10px);
-    }
 }
 
 
-/*
 
-.parameters{
-    display: -webkit-inline-box;
-    margin-top: 20px;
-}
-.param-2{
-    margin-left: 7%;
-    
-}
-p.value{
-    color: #000;
-    font-weight: bold;
-}
-.parameters__price{
-    font-size: 60px;
-    font-weight: 300;
-    color: #000;
-}
 
-.parameters__btn{
-    margin-top: 11%;
-}
-*/

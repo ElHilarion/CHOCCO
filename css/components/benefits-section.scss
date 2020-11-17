@@ -1,14 +1,10 @@
 .benefits-section{
     position: relative; 
     background: url("../img/decorations/side-leaf.png") left top 57% no-repeat;   
-    
-    @include tablets{
-        background-position: left bottom 95%;
-    }
 
     @include phones{
-        height: 906px;
         background: none;
+        margin: 5%;
     }
 
     &:before{
