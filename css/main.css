@@ -643,7 +643,6 @@ button, select {
   margin-right: 20px;
   max-width: 14.4rem;
   position: relative;
-  margin-bottom: 10px;
 }
 @media screen and (max-width: 480px) {
   .team__item {
