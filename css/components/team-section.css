@@ -1,0 +1,38 @@
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team--version--desktop .team__content {
+  position: absolute;
+  top: 100%;
+}
+
+.team__item {
+  flex: 1;
+  text-align: center;
+  margin-right: 20px;
+  max-width: 14.4rem;
+  position: relative;
+}
+
+.team__member {
+  height: 288px;
+  margin-bottom: 20px;
+}
+
+.team__title {
+  color: #292929;
+  display: inline-flex;
+  align-items: center;
+}
+
+.team__content {
+  overflow: hidden;
+  transition: height 0.3s;
+  height: 0;
+}
+
+.taem__content-block {
+  padding-bottom: 5px;
+}

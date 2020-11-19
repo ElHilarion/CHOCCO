@@ -87,6 +87,17 @@ img {
   max-width: 100%;
 }
 
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+button, select {
+  text-transform: none;
+}
+
 .hero {
   background: url("../img/decorations/big-leaf.png") right bottom no-repeat;
   background-color: #61C4D9;
@@ -439,13 +450,16 @@ img {
 .slider {
   overflow: hidden;
 }
+.slider .bx-wrapper {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
 
 .slider__list {
-  width: 200%;
   display: flex;
   align-items: center;
   position: relative;
-  transition: right 2s;
 }
 
 .slider__item {
@@ -481,6 +495,7 @@ img {
 
 .slider__right {
   margin-left: 5%;
+  padding-right: 8%;
 }
 @media screen and (max-width: 768px) {
   .slider__right {
@@ -580,6 +595,108 @@ img {
   color: #000;
 }
 
+.team-section {
+  height: 17.5rem;
+}
+@media screen and (max-width: 768px) {
+  .team-section {
+    margin-top: -5rem;
+    margin-bottom: -11.1111111111rem;
+  }
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .team {
+    padding: 0 10%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team--version--desktop .team__content {
+  position: absolute;
+  top: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .team--version--desctop {
+    display: none;
+  }
+}
+
+.team--version--mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team--version--mobile {
+    display: flex;
+  }
+}
+
+.team__item {
+  flex: 1;
+  text-align: center;
+  margin-right: 20px;
+  max-width: 14.4rem;
+  position: relative;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+  .team__item {
+    margin-right: 0;
+  }
+}
+
+.team__member {
+  height: 288px;
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+@media screen and (max-width: 480px) {
+  .team__member {
+    display: flex;
+    justify-content: center;
+    height: 162px;
+    margin-bottom: 1%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team__member-pic {
+    width: 7.6666666667rem;
+    height: 10rem;
+  }
+}
+
+.team__title {
+  color: #292929;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.team__content {
+  overflow: hidden;
+  transition: height 0.3s;
+  height: 0;
+}
+
+.team__content-profession {
+  color: #000;
+  margin: 3px 0;
+}
+@media screen and (max-width: 768px) {
+  .team__content-profession {
+    margin: -2px 0;
+  }
+}
+
 .reviews__display {
   background: #F8FAF9;
   padding: 2.3333333333rem 2.3333333333rem;
@@ -604,14 +721,47 @@ img {
   top: -3.2222222222rem;
 }
 
+.reviews__list {
+  position: relative;
+  min-height: 280px;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  opacity: 0;
+}
+.reviews__item.active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+}
+
 .reviews__display-inner {
   display: flex;
 }
-.reviews__display-inner:before {
+.reviews__display-inner:after {
   content: url("../img/decorations/leaf-with-strawberries.png");
   position: absolute;
-  right: 0%;
-  top: 2%;
+  right: -5%;
+  top: -5%;
+}
+@media screen and (max-width: 768px) {
+  .reviews__display-inner:after {
+    right: -7%;
+    top: -5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__display-inner:after {
+    right: -18%;
+    top: -8%;
+  }
 }
 @media screen and (max-width: 768px) {
   .reviews__display-inner {
@@ -681,29 +831,31 @@ img {
   justify-content: center;
   margin-top: 1.3888888889rem;
 }
-.reviews__switcher-item {
-  margin-left: 0.3333333333rem;
-}
 
 .interactive-avatar {
   width: 4.1666666667rem;
   height: 4.1666666667rem;
+  margin-left: 0.3333333333rem;
   border: 0.2222222222rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
+}
+.interactive-avatar:hover {
+  border-color: #365A49;
 }
 .interactive-avatar--active {
   border-color: #365A49;
 }
 
 .interactive-avatar__link {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
-  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .interactive-avatar__img {
@@ -782,7 +934,7 @@ img {
 
 .decoration__blackberry {
   position: absolute;
-  bottom: 35%;
+  bottom: 27%;
   right: 0;
 }
 @media screen and (max-width: 768px) {
@@ -790,12 +942,12 @@ img {
     content: url("../img/decorations/blc-2.png");
     width: 109, 14px;
     height: 147px;
-    bottom: 33%;
+    bottom: 27.7%;
   }
 }
 @media screen and (max-width: 480px) {
   .decoration__blackberry {
-    bottom: 31%;
+    bottom: 26.4%;
   }
 }
 

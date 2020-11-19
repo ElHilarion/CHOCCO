@@ -22,14 +22,45 @@
     }
 }
 
+.reviews__list{
+    position: relative;
+    min-height: 280px;
+}
+
+.reviews__item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 0;
+
+    &.active{
+        position: static;
+        opacity: 1;
+        pointer-events: unset;
+    }
+}
 .reviews__display-inner{
     display: flex;
 
-    &:before{
+    &:after{
         content: url("../img/decorations/leaf-with-strawberries.png");
         position: absolute;
-        right: 0%;
-        top: 2%;
+        right: -5%;
+        top: -5%;
+
+        @include tablets{
+            right: -7%;
+            top: -5%;
+        }
+        @include phones{
+            right: -18%;
+            top: -8%;
+        }
     }
 
     @include tablets{
@@ -96,9 +127,6 @@
     display: flex;
     justify-content: center;
     margin-top: rem(25px);
-
-    &-item{
-        margin-left: rem(6px);
-    }
-
 }
+
+
