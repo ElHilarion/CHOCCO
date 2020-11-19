@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CHOCCO</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -149,8 +151,6 @@
                     </ul>
                 </div>
             </section>
-
-            <!-- SLIDER -->
             <section class="section bars-section">
                 <div class="container bars__container">
                     <div class="slider__controls">
@@ -247,53 +247,224 @@
                     </div>
                 </div>
             </section>
-            <!-- //SLIDER// -->
-
+            <section class="section team-section">
+                <div class="container">
+                    <div class="section__title">Команда</div>
+                    <!-- desctop -->
+                    <ul class="team team--version--desctop">
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./img/content/first-team.png" alt="" class="team__member-pic" alt="team member">
+                            </div>
+                            <button class="team__title" type="button">Борис Федорович</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <p class="team__content-profession">Главный технолог</p>
+                                    <p class="team__content-text">
+                                        Отвечает за вкусовые качества 
+                                        и калорийность.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./img/content/second-team.png" alt="" class="team__member-pic" alt="team member">
+                            </div>
+                            <button class="team__title" type="button">Алла Иванова</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <p class="team__content-profession">Специалист по упаковке</p>
+                                    <p class="team__content-text">
+                                        Автор запоминающегося стиля 
+                                        наших батончиков.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./img/content/third-team.png" alt="" class="team__member-pic" alt="team member">
+                            </div>
+                            <button class="team__title" type="button">Кирилл Матросов</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <p class="team__content-profession">Оператор</p>
+                                    <p class="team__content-text">
+                                        С радостью поможет подобрать батончики и оформить заказ. 
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./img/content/fourth-team.png" alt="" class="team__member-pic" alt="team member">
+                            </div>
+                            <button class="team__title" type="button">Мила Рыжкова</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <p class="team__content-profession">PR, маркетинг</p>
+                                    <p class="team__content-text">
+                                        По всем вопросам сотрудничества 
+                                        и рекламы писать только Миле. 
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- mobile -->
+                    <ul class="team team--version--mobile">
+                        <li class="team__item">
+                            <button class="team__title" type="button">Борис Федорович</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./img/content/first-team.png" alt="" class="team__member-pic" alt="team member">
+                                    </div>
+                                    <p class="team__content-profession">Главный технолог</p>
+                                    <p class="team__content-text">
+                                        Отвечает за вкусовые качества 
+                                        и калорийность.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <button class="team__title" type="button">Алла Иванова</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./img/content/second-team.png" alt="" class="team__member-pic" alt="team member">
+                                    </div>
+                                    <p class="team__content-profession">Специалист по упаковке</p>
+                                    <p class="team__content-text">
+                                        Автор запоминающегося стиля 
+                                        наших батончиков.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <button class="team__title" type="button">Кирилл Матросов</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./img/content/third-team.png" alt="" class="team__member-pic" alt="team member">
+                                    </div>
+                                    <p class="team__content-profession">Оператор</p>
+                                    <p class="team__content-text">
+                                        С радостью поможет подобрать батончики и оформить заказ.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <button class="team__title" type="button">Мила Рыжкова</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./img/content/fourth-team.png" alt="" class="team__member-pic" alt="team member">
+                                    </div>
+                                    <p class="team__content-profession">PR, маркетинг</p>
+                                    <p class="team__content-text">
+                                        По всем вопросам сотрудничества 
+                                        и рекламы писать только Миле. 
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
             <section class="section reviews-section reviews-raspb">
                 <div class="container">
                     <h2 class="section__title">Отзывы</h2>
-                    <div class="reviews">
                         <div class="reviews__display ">
-                            <div class="reviews__display-inner">
-                                <div class="reviews__avatar">
-                                    <img src="./img/content/first-review.jpg" alt="" class="reviews__avatar-img">
-                                </div>
-                                <article class="reviews__content">
-                                    <h3 class="reviews__title">Лучший перекус</h3>
-                                    <div class="reviews__text">
-                                        <p>
-                                            Я ем малыми порциями, но часто. Это повышает 
-                                            мою продуктивность в разы. В течение дня сижу 
-                                            за компьютером и часто отходить в кафе или на 
-                                            кухню просто не могу себе позволить. А батончик – 
-                                            он всегда под рукой. Это приятно и удобно. 
-                                        </p>
+                            <ul class="reviews__list">
+                                <li class="reviews__item active" data-linked-with="one">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="./img/content/first-review.jpg" alt="" class="reviews__avatar-img">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <h3 class="reviews__title">Лучший перекус</h3>
+                                            <div class="reviews__text">
+                                                <p>
+                                                    Я ем малыми порциями, но часто. Это повышает 
+                                                    мою продуктивность в разы. В течение дня сижу 
+                                                    за компьютером и часто отходить в кафе или на 
+                                                    кухню просто не могу себе позволить. А батончик – 
+                                                    он всегда под рукой. Это приятно и удобно. 
+                                                </p>
+                                            </div>
+                                            <div class="reviews__author"><p>Алёна Хмельницкая</p></div>
+                                        </article>
                                     </div>
-                                    <div class="reviews__author"><p>Алёна Хмельницкая</p></div>
-                                </article>
-                            </div>
+                                </li>
+                                <li class="reviews__item" data-linked-with="two">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="./img/content/second-review.jpg" alt="" class="reviews__avatar-img">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <h3 class="reviews__title">Идеально подходят для спортсменов</h3>
+                                            <div class="reviews__text">
+                                                <p>
+                                                    После тренировок всегда хочется быстро закинуться чем-то 
+                                                    белковым, потому что до дома ещё нужно доехать. А кушать 
+                                                    хочется. Протеиновые батончики всегда выручают в этом плане.
+                                                    Спасибо производителю за этот качественный и экологичный 
+                                                    продукт.  
+                                                </p>
+                                            </div>
+                                            <div class="reviews__author"><p>Вадим Грачев</p></div>
+                                        </article>
+                                    </div>
+                                </li>
+                                <li class="reviews__item" data-linked-with="three">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="./img/content/third-review.jpg" alt="" class="reviews__avatar-img">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <h3 class="reviews__title">Лучшие батончики премиум уровня</h3>
+                                            <div class="reviews__text">
+                                                <p>
+                                                    Батончики понравились. На мой взгляд слегка завышена цена 
+                                                    по сравнению с конкурентами, однако, как говорится – оно 
+                                                    того стоит. Нравится носить с собой, нравится держать в руке. 
+                                                    Ну и конечно же, кушать. Идеально утоляют голод, хоть и не 
+                                                    надолго. Через час уже ем ещё один. Но это скорее плюс, 
+                                                    чем минус.
+                                                </p>
+                                            </div>
+                                            <div class="reviews__author"><p>Мария Орлова</p></div>
+                                        </article>
+                                        
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                         <ul class="reviews__switcher">
-                            <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                                <a href="#" class="interactive-avatar__link">
+                            <li class=" interactive-avatar interactive-avatar--active">
+                                <a href="#" class="interactive-avatar__link" data-unhide="one">
                                     <img src="./img/content/first-review.jpg" alt="girl with dark hair" class="interactive-avatar__img">
                                 </a>
                             </li>
 
-                            <li class="reviews__switcher-item interactive-avatar">
-                                <a href="#" class="interactive-avatar__link">
+                            <li class=" interactive-avatar">
+                                <a href="#" class="interactive-avatar__link" data-unhide="two">
                                     <img src="./img/content/second-review.jpg" alt="girl with dark hair" class="interactive-avatar__img">
                                 </a>
                             </li>
 
-                            <li class="reviews__switcher-item interactive-avatar">
-                                <a href="#" class="interactive-avatar__link">
+                            <li class=" interactive-avatar">
+                                <a href="#" class="interactive-avatar__link" data-unhide="three">
                                     <img src="./img/content/third-review.jpg" alt="girl with dark hair" class="interactive-avatar__img">
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </div>
             </section>
             <div class="section order-section section--font-color--green">
                 <img src="img/decorations/berry.png" class="decoration__berry">
@@ -446,8 +617,14 @@
             </ul>
         </nav>
     </div>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./js/burger-menu.js"></script>
-    <script src="./js/slider.js"></script>
+    <!--<script src="./js/slider.js"></script>-->
+    <script src="./js/tabs.js"></script>
+    <script src="./js/team.js"></script>
+    <script src="./js/slider-2.js"></script>
 </body>
 </html>
 

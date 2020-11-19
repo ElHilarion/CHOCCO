@@ -30,17 +30,17 @@
 
 .decoration__blackberry{
     position: absolute;
-    bottom:35%;
+    bottom:27%;
     right: 0;
 
     @include tablets{
         content: url("../img/decorations/blc-2.png");
         width: 109,14px;
         height: 147px;
-        bottom: 33%;
+        bottom: 27.7%;
     }
     @include phones{
-        bottom: 31%;
+        bottom: 26.4%;
     }
 
 }

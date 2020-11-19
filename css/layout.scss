@@ -83,3 +83,14 @@ img {
     display: flex;
     max-width: 100%;
  }
+ 
+button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+button, select{
+    text-transform: none;
+}
