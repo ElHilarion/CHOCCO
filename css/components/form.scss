@@ -70,6 +70,13 @@
         }
     }
 }
+.form__input.input-error{
+    border:1px solid rgb(248, 6, 6);
+}
+
+.input-error{
+    border:1px solid rgb(248, 6, 6);
+}
 
 .form__controls{
     display: flex;

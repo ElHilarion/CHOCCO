@@ -7,6 +7,7 @@
     <title>CHOCCO</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -470,37 +471,46 @@
                 <img src="img/decorations/berry.png" class="decoration__berry">
                 <img src="img/decorations/leaf-03.png" class="decoration__leaf">
                 <img src="img/decorations/blackberry.png" class="decoration__blackberry">
+                <div id="modal" class="modal">
+                    <div class="modal__container">
+                        <div class="fancybox__container">
+                            <p class="modal__text">Cообщение отправлено</p>
+                            <a href="#" class="btn app-submit-btn btn__theme--green">Закрыть </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="container">
                     <h2 class="section__title">Закажите доставку</h2>
                     <form class="form">
+                        <input type="hidden" name="to" value="goodvin@gmail.com">
                         <div class="form__col">
 
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title"><p>Имя</p></div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="name" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title"><p>Телефон</p></div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="phone" class="form__input">
                                 </label>
                             </div>
 
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title"><p>Улица</p></div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="street" class="form__input">
                                 </label>
                             </div>
 
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title"><p>Дом</p></div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="home" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title"><p>Корпус</p></div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="part" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title"><p>Квартира</p></div>
@@ -516,7 +526,7 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title"><p>Комментарий</p></div>
-                                    <textarea class="form__input form__input--textarea"></textarea>
+                                    <textarea class="form__input form__input--textarea" name="comment"></textarea>
                                 </label>
                             </div>
                             <div class="form__controls">
@@ -620,11 +630,13 @@
  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
     <script src="./js/burger-menu.js"></script>
-    <!--<script src="./js/slider.js"></script>-->
     <script src="./js/tabs.js"></script>
     <script src="./js/team.js"></script>
-    <script src="./js/slider-2.js"></script>
+    <script src="./js/bxslider.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 
