@@ -1,13 +1,19 @@
 .team-section{
     height: rem(315px);
+    margin-top: rem(-250px);
 
     @include tablets{
-        margin-top: rem(-90px);
-        margin-bottom: rem(-200px);
+        margin-top: -64%;
+        margin-bottom: 0%;
     }
 }
+.team-section .container{
+    height: rem(250px);
 
-
+    @include tablets{
+        height: 0;
+    }
+}
 .team{
     display: flex;
     -webkit-box-pack: justify;

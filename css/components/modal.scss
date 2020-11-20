@@ -1,0 +1,37 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(00, 00, 00, .5);
+    display: none;
+
+    @include tablets{
+        padding: 0;
+    }
+}
+
+.fancybox__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: rem(309px);
+    height: rem(176px);
+    background: #fff;
+    //margin: 15% 35%;
+}
+
+.modal__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: rem(250px);
+}
+
+.modal__text{
+    margin-bottom: rem(25px);
+    text-align: center;
+}
