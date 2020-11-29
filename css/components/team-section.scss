@@ -3,8 +3,13 @@
     margin-top: rem(-250px);
 
     @include tablets{
-        margin-top: -64%;
-        margin-bottom: 0%;
+        margin-top: -45%;
+        margin-bottom: 30%;
+    }
+
+    @include phones{
+        margin-top: -40%;
+        margin-bottom: -35%;
     }
 }
 .team-section .container{
@@ -12,6 +17,9 @@
 
     @include tablets{
         height: 0;
+    }
+    @include phones{
+        height: rem(430px);
     }
 }
 .team{

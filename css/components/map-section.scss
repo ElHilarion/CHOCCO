@@ -1,7 +1,9 @@
 .map{
-    background: url("../img/map.jpg") no-repeat;
-    background-size: cover;
     position: relative;
     width: 100%;
     height: rem(872px);
+    
+    @include tablets{
+        margin-top: -26%;
+    }
 }

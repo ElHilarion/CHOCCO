@@ -40,12 +40,17 @@ $z-fixed-menu: 90;
 //bars-section//
 @import "components/bars-section.scss";
 @import "components/parameters-slider.scss";
+@import "components/structure.scss";
 //team-section//
 @import "components/team-section.scss";
+//products-menu-section//
+@import "components/products-menu-section.scss";
 //reviews-section//
 @import "components/reviews.scss";
 @import "components/interactive-avatar.scss";
 @import "components/reviews-section.scss";
+//video-section//
+@import "components/video-section.scss";
 //order-section//
 @import "components/order-section.scss";
 @import "components/form.scss";

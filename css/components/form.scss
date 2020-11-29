@@ -86,10 +86,12 @@
 .form__btns{
     margin-top: 8%;
 
+
     @include tablets{
         display: flex;
         justify-content: center;
         margin-left: 11%;
+        margin-bottom: 8%;
     }
 }
 
