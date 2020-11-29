@@ -1,0 +1,110 @@
+
+.video__container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -13%;
+}
+
+.video__title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    color: #000;
+}
+.video__player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video__player-img{
+    position: absolute;
+    width: 75,06px;
+    height: 109,67px;
+
+    &--active{
+        opacity: 0;
+    }
+}
+
+
+#player{
+    min-width: rem(660px);
+    max-width: rem(660px);
+    min-height: rem(390px);
+    max-height: rem(390px);
+
+    @include tablets{
+        min-width: 87.5%;
+        max-width: 87.5%;
+        min-height: 100%;
+        max-height: 100%;
+    }
+    @include phones{
+        min-width: 90%;
+        max-width: 90%;
+        min-height: 100%;
+        max-height: 100%;
+    }
+}
+
+.video__toolbar{
+    background:url("../img/control-panel.png") ;
+    position: absolute;
+    width: 660px;
+    height: 34.89px;
+    margin-bottom: -400px;
+    display: flex;
+    justify-content: space-around;
+
+    @include tablets{
+        margin-bottom: -53%;
+        width: 87.5%;
+    }
+    @include phones{
+        margin-bottom: -57%;
+        width: 90%;    
+    }
+}
+.duration{
+    display: flex;
+}
+.duration__img{
+    width: 10,92px;
+    height: 15,95px;
+    margin: 10px;
+    margin-left: -30px;
+
+    @include phones{
+        margin-left: 6px;
+    }
+
+}
+
+.duration__length{
+    width: 400px;
+
+    &--other{
+        width: 60px;
+    }
+
+    @include phones{
+        width: 205px;
+
+        &--other{
+            width: 50px;
+        }
+    }
+}
+
+.sound{    
+    margin-top: 5px;
+
+    @include phones{
+        margin-top: 7px;
+    }
+}
+

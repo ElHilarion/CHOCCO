@@ -11,7 +11,7 @@
 
 .slider__btn{
     position: absolute;
-    top: 50%;
+    top: 42%;
     transform: translateY(50%);
     width: 1.875rem;
     z-index: 20;
@@ -40,7 +40,9 @@
         border: 0;
         background: transparent;
         box-shadow: none;
+        width: 103%;
     }
+
 }
 
 .slider__list{
@@ -104,6 +106,8 @@
         display: none;
     }
 }
+
+
 .structure__title{
     text-transform: uppercase;
     color: rgb(255, 255, 255);
@@ -111,6 +115,8 @@
     font-weight: 700;
     margin: 0 18px;
 }
+
+
 
 .slider__title{
     padding: 0;

@@ -1,0 +1,41 @@
+.structure__block-elem{
+    width: 200px;
+}
+.structure__block{
+    position: absolute;
+    width: 273px;
+    height: 344px;
+    margin: -112px 92px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(4px);
+    border-radius: 4px;
+    opacity: 0; 
+    transition: opacity .3s;
+    pointer-events: none;
+
+    &-second{
+        height: 370px;
+    }
+}
+/*.structure:hover~.structure__block{
+    opacity: 1;
+}*/
+
+.strcture-name{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.structure__block-names{
+    padding: 20px;
+}
+
+.structure-text{
+    margin-left: -6px;
+}
+
+.structure-number{
+    margin-right: 20px;
+}

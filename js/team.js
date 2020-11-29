@@ -24,8 +24,13 @@ $(".team__title").click((e) =>{
 
     if(elemContainer.hasClass("active")) {
         closeEveryItem(container);
+        $("#triangle").css({'transform': 'none'});
     }else {
         closeEveryItem(container);
         openItem($this);
+        $("#triangle").css({'transform': 'rotate(-180deg)'});
+        
     }
 });
+
+

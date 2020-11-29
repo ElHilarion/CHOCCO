@@ -7,40 +7,46 @@
         height: 760px;
     }
 }
+.order-decorations-1{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.order-decorations-2{
+    display: flex;
+    justify-content: space-between;
+}
 
 .decoration__berry{
-    position: absolute;
-    bottom: 22%;
-    left: 7.5%;
-
+    width: 60px;
+    height: 60px;
+    margin: 50px 90px 0px 90px;
     @include tablets{
         display: none;
     }
 }
 
 .decoration__leaf{
-    position: absolute;
-    bottom: 22%;
-    right: 4%;
-
+    margin: -80px 75px -5px;
     @include tablets{
         display: none;
     }
 }
 
 .decoration__blackberry{
-    position: absolute;
-    bottom:27%;
-    right: 0;
+    position: relative;
+    width: 196px;
+    height: 264px;
+    margin-top: -188px;
 
     @include tablets{
-        content: url("../img/decorations/blc-2.png");
-        width: 109,14px;
+        width: 109.14px;
         height: 147px;
-        bottom: 27.7%;
+        content: url("../img/decorations/blc-2.png");
+        margin-top: -159px;
     }
     @include phones{
-        bottom: 26.4%;
+        margin-top: -159px;
     }
-
 }
+
