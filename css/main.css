@@ -31,8 +31,14 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -101,14 +107,13 @@ button, select {
 .hero {
   background: url("../img/decorations/big-leaf.png") right bottom no-repeat;
   background-color: #61C4D9;
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
   color: #FFFFFF;
   position: relative;
 }
 @media screen and (max-width: 768px) {
   .hero {
-    height: 1000px;
     background-position: right bottom 78%;
   }
 }
@@ -641,7 +646,7 @@ button, select {
 
 .team-section {
   height: 17.5rem;
-  margin-top: -13.8888888889rem;
+  margin-top: -5.8889rem;
 }
 @media screen and (max-width: 768px) {
   .team-section {
@@ -657,7 +662,7 @@ button, select {
 }
 
 .team-section .container {
-  height: 13.8888888889rem;
+  height: 21.8889rem;
 }
 @media screen and (max-width: 768px) {
   .team-section .container {
@@ -769,7 +774,7 @@ button, select {
 
 .section.products-menu-section {
   display: -webkit-box;
-  min-height: 615px;
+  min-height: 778px;
 }
 @media screen and (max-width: 768px) {
   .section.products-menu-section {
@@ -1088,37 +1093,26 @@ p.products-menu__text {
   color: #000;
 }
 
-.video__player {
+.player {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.video__player-img {
-  position: absolute;
-  width: 75, 6px;
-  height: 109, 67px;
-}
-.video__player-img--active {
-  opacity: 0;
-}
-
-#player {
+.player__wrapper {
   min-width: 36.6666666667rem;
   max-width: 36.6666666667rem;
   min-height: 21.6666666667rem;
   max-height: 21.6666666667rem;
 }
 @media screen and (max-width: 768px) {
-  #player {
-    min-width: 87.5%;
-    max-width: 87.5%;
-    min-height: 100%;
-    max-height: 100%;
+  .player__wrapper {
+    min-width: 100%;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
-  #player {
+  .player__wrapper {
     min-width: 90%;
     max-width: 90%;
     min-height: 100%;
@@ -1126,57 +1120,118 @@ p.products-menu__text {
   }
 }
 
-.video__toolbar {
+.player__controls {
   background: url("../img/control-panel.png");
   position: absolute;
   width: 660px;
-  height: 34.89px;
-  margin-bottom: -400px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 418px;
 }
 @media screen and (max-width: 768px) {
-  .video__toolbar {
-    margin-bottom: -53%;
+  .player__controls {
     width: 87.5%;
   }
 }
 @media screen and (max-width: 480px) {
-  .video__toolbar {
-    margin-bottom: -57%;
+  .player__controls {
     width: 90%;
   }
 }
 
-.duration {
+.player__start {
   display: flex;
+  background: url("../img/play-2.png") no-repeat;
+  position: absolute;
+  margin: 8px 0px 0px 6px;
+  width: 100%;
+  height: 100%;
 }
 
-.duration__img {
-  width: 10, 92px;
-  height: 15, 95px;
-  margin: 10px;
-  margin-left: -30px;
+.player.paused .player__start {
+  background: none;
+}
+.player.paused .player__start:before {
+  content: url("../img/pause.png");
+  margin: -7px;
+}
+
+.player__duration {
+  margin-right: 5px;
+}
+
+.player__playback {
+  position: relative;
+  width: 500px;
+  height: 5px;
+  margin-left: 30px;
 }
 @media screen and (max-width: 480px) {
-  .duration__img {
-    margin-left: 6px;
+  .player__playback {
+    width: 120px;
+  }
+}
+.player__playback:before {
+  content: "";
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  background: #acacac;
+  transform: translateY(-50%);
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .player__playback:before {
+    width: 295px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player__playback:before {
+    width: 100%;
   }
 }
 
-.duration__length {
-  width: 400px;
+.player__playback-button {
+  background: #fcffd4;
+  border-radius: 50px;
+  border: none;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
 }
-.duration__length--other {
-  width: 60px;
+
+.player__splash {
+  margin-top: -413px;
+  height: 400px;
+  width: 660px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-@media screen and (max-width: 480px) {
-  .duration__length {
-    width: 205px;
-  }
-  .duration__length--other {
-    width: 50px;
-  }
+.player__splash:before {
+  content: url("../img/video-poster.png");
+  position: relative;
+  top: 59px;
+}
+.player__splash:after {
+  content: url("../img/play-1.png");
+  position: relative;
+  top: -190px;
+}
+
+.player.paused .player__splash:before {
+  content: none;
+}
+.player.paused .player__splash:after {
+  content: none;
 }
 
 .sound {
@@ -1191,7 +1246,7 @@ p.products-menu__text {
 .order-section {
   background: url("../img/pattern1.jpg");
   height: 852px;
-  margin-top: 6%;
+  margin-top: -2%;
 }
 @media screen and (max-width: 768px) {
   .order-section {
@@ -1388,10 +1443,15 @@ p.products-menu__text {
   transform: translate(-50%, -50%);
 }
 
+.map__section {
+  position: relative;
+}
+
 .map {
   position: relative;
   width: 100%;
-  height: 48.4444444444rem;
+  height: 27.4444rem;
+  top: -122px;
 }
 @media screen and (max-width: 768px) {
   .map {
@@ -1400,8 +1460,8 @@ p.products-menu__text {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: 60px;
   left: 0;
   right: 0;
   padding: 1.2777777778rem 0;
@@ -1477,6 +1537,9 @@ p.products-menu__text {
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;
 }
+.fixed-menu__item:hover .fixed-menu__link {
+  border-color: #fff;
+}
 
 .fixed-menu__link {
   width: 0.8888888889rem;
@@ -1497,6 +1560,17 @@ p.products-menu__text {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.fixed-menu--shadowed .fixed-menu__link::before {
+  background: #000;
+}
+
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link {
+  border-color: #000;
+}
+.fixed-menu--shadowed .fixed-menu__item:hover .fixed-menu__link {
+  border-color: #000;
 }
 
 .button_container {

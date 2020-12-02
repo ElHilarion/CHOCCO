@@ -14,7 +14,7 @@
     <div class="wrapper">
         <div class="maincontent">
 
-            <section class="hero">
+            <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
                 <img src="./img/decorations/small-life.png" class="hero__deco-1">
                 <img src="./img/chocco-deco-1.png" class="hero__deco-2">
                 <div class="container hero__container">
@@ -22,13 +22,13 @@
                         <img src="./img/logo.png" alt="chocco logo" class="logo">
                         <nav class="menu">
                             <ul class="menu__list">
-                                <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Батончики</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Меню</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="benefits" class="menu__link">О нас</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="bars" class="menu__link">Батончики</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="team" class="menu__link">Команда</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="products-menu" class="menu__link">Меню</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="video" class="menu__link">Как мы работаем</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="map" class="menu__link">Контакты</a></li>
                             </ul>
                         </nav>
                         <a href="tel:+78009039090" class="phone-number header__phone-number">
@@ -48,7 +48,7 @@
                     <div class="hero__title-section">
                         <h1 class="hero__main-title">Натуральные шоколадные батончики</h1>
                         <div class="hero__title-desc"><p>Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p></div>    
-                        <a href="#" class="btn btn__theme--white">Заказать</a>            
+                        <a href="#" data-scroll-to="order" class="btn btn__theme--white">Заказать</a>            
                     </div>
                     <div class="hero__icons-section">
                         <ul class="features">
@@ -80,7 +80,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section benefits-section">
+            <section data-sidemenu-theme="black" data-section-id="benefits" class="section benefits-section">
                 <div class="container">
                     <div class="headline">
                         <h2 class="section__title headline__title">Почему CHOCCO?</h2>
@@ -152,7 +152,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section bars-section">
+            <section data-sidemenu-theme="black" data-section-id="bars" class="section bars-section">
                 <div class="container bars__container">
                     <div class="slider__controls">
 
@@ -351,7 +351,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section team-section">
+            <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
                 <div class="container">
                     <div class="section__title">Команда</div>
                     <!-- desctop -->
@@ -520,7 +520,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section products-menu-section">
+            <section data-sidemenu-theme="white" data-section-id="products-menu" class="section products-menu-section">
                 <img src="./img/decorations/raspb-4.png" class="products-decoration">
                 <h1 class="section__title products-menu-section__title">Меню</h1>
                 <ul class="products-menu">
@@ -592,7 +592,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="section reviews-section reviews-raspb">
+            <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews-section reviews-raspb">
                 <div class="container">
                     <h2 class="section__title">Отзывы</h2>
                         <div class="reviews__display ">
@@ -682,14 +682,35 @@
                         </ul>
                     </div>
             </section>
-            <section class="section video-section">
+            <section data-sidemenu-theme="black" data-section-id="video" class="section video-section">
                 <h2 class="video__title">Как мы работаем</h2>
                 <div class="video__container">
-                    <div class="video__player">
-                        <video id="player" poster="./img/video-poster.png">
-                            <source src="./video/chocco.mp4" type="video/mp4">
-                        </video>
-                        <img src="./img/play-1.png"  class="play video__player-img" alt="">
+                    <div class="player-section__container">
+                        <div class="player">
+                          <div class="player__wrapper">
+                            <div id="yt-player" class="player__elem" ></div>
+                            <div class="player__splash">
+                               <!--<img src="./img/play-1.png"  class="play video__player-img" alt="">--> 
+                            </div>
+                          </div>
+                          <div class="player__controls">
+                            <button class="player__start"></button>
+                            <div class="player__playback">
+                              <button class="player__playback-button"></button>
+                            </div>
+                            <div class="player__duration">
+                              <span class="player__duration-completed">0:00</span> :
+                              <span class="player__duration-estimate">0:00</span>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <!--
+            <div class="video__player ">
+                        <video id="player" poster="./img/video-poster.png"></video>
                     </div>
                     <div class="video__toolbar">
                         <div class="duration">
@@ -702,10 +723,14 @@
                                 <input type="range" class="duration__length duration__length--other" id="micLevel">
                             </div>
                         </div>
+                        <div class="player__duration">
+                            <span class="player__duration-completed">0:00</span>
+                            <span class="player__duration-estimate">0:00</span>
+                        </div>
                     </div>
-                </div>
+                 -->
             </section>
-            <div class="section order-section section--font-color--green">
+            <section data-sidemenu-theme="white" data-section-id="order" class="section order-section section--font-color--green">
                 <div class="order-decorations-1">
                     <img src="img/decorations/blackberry.png" class="decoration__blackberry">
                 </div>
@@ -797,8 +822,8 @@
                     <img src="img/decorations/berry.png" class="decoration__berry">
                     <img src="img/decorations/leaf-03.png" class="decoration__leaf">
                 </div>
-            </div>
-            <section class="section map-section">
+            </section>
+            <section data-sidemenu-theme="black" data-section-id="map" class="section map-section">
                 <div class="map" id="map"></div>
                 <footer class="footer">
                     <div class="container footer__container">
@@ -846,26 +871,27 @@
         <div class="overlay" id="overlay">
             <nav class="overlay-menu">
               <ul class="overlay-menu__list">
-                <li class="overlay-menu__item"><a class="overlay-menu__link" id="link" href="#">О нас</a></li>
-                <li class="overlay-menu__item"><a class="overlay-menu__link" href="#">Бургеры</a></li>
-                <li class="overlay-menu__item"><a class="overlay-menu__link" href="#">Команда</a></li>
-                <li class="overlay-menu__item"><a class="overlay-menu__link" href="#">Меню</a></li>
-                <li class="overlay-menu__item"><a class="overlay-menu__link" href="#">Отзывы</a></li>
-                <li class="overlay-menu__item"><a class="overlay-menu__link" href="#">Контакты</a></li>
+                <li class="overlay-menu__item"><a data-scroll-to="benefits" class="overlay-menu__link" id="link" href="#">О нас</a></li>
+                <li class="overlay-menu__item"><a data-scroll-to="bars" class="overlay-menu__link" href="#">Батончики</a></li>
+                <li class="overlay-menu__item"><a data-scroll-to="team" class="overlay-menu__link" href="#">Команда</a></li>
+                <li class="overlay-menu__item"><a data-scroll-to="products-menu" class="overlay-menu__link" href="#">Меню</a></li>
+                <li class="overlay-menu__item"><a data-scroll-to="reviews" class="overlay-menu__link" href="#">Отзывы</a></li>
+                <li class="overlay-menu__item"><a data-scroll-to="video" class="overlay-menu__link" href="#">Как мы работаем</a></li>
+                <li class="overlay-menu__item"><a data-scroll-to="map" class="overlay-menu__link" href="#">Контакты</a></li>
               </ul>
             </nav>
         </div>
-        <nav class="fixed-menu">
+        <nav class="fixed-menu ">
             <ul class="fixed-menu__list">
-                <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-                <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item fixed-menu__item--active"><a href="" data-scroll-to="hero" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="" data-scroll-to="benefits" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="" data-scroll-to="bars" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="" data-scroll-to="team" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="" data-scroll-to="products-menu" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="" data-scroll-to="reviews" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="" data-scroll-to="video" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="" data-scroll-to="order" class="fixed-menu__link"></a></li>
+                <li class="fixed-menu__item"><a href="" data-scroll-to="map" class="fixed-menu__link"></a></li>
             </ul>
         </nav>
     </div>
@@ -874,6 +900,7 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
 
     <script src="./js/burger-menu.js"></script>
     <script src="./js/tabs.js"></script>
@@ -883,7 +910,9 @@
     <script src="./js/map.js"></script>
     <script src="./js/products-menu.js"></script>
     <script src="./js/structure.js"></script>
-    <script src="./js/video.js"></script>
+    <!--<script src="./js/video.js"></script>-->
+    <script src="./js/player.js"></script>
+    <script src="./js/ops.js"></script>
 </body>
 </html>
 

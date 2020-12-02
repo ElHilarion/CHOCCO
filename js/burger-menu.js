@@ -3,7 +3,7 @@ let menuOpenBurger = (function (buttonClass, menuClass) {
   let menu = document.querySelector(menuClass);
   let body = document.querySelector('body');
 
-  let _toggleMenu = function (e) {
+  let _toggleMenu = function () {
     button.classList.toggle('button_container--active');
     menu.classList.toggle('overlay--open');
     body.classList.toggle('body-active-menu');

@@ -1,6 +1,6 @@
 .team-section{
     height: rem(315px);
-    margin-top: rem(-250px);
+    margin-top: -5.8889rem;
 
     @include tablets{
         margin-top: -45%;
@@ -13,7 +13,7 @@
     }
 }
 .team-section .container{
-    height: rem(250px);
+    height: 21.8889rem;
 
     @include tablets{
         height: 0;
