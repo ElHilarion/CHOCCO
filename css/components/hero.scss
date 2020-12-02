@@ -1,13 +1,12 @@
 .hero{
     background: url("../img/decorations/big-leaf.png") right bottom no-repeat;
     background-color: $blue;
-    height: 100vh;
+    height: 100%;
     min-height: 40.625rem;
     color:  #FFFFFF;
     position: relative;
 
     @include tablets{
-        height: 1000px;
         background-position: right bottom 78%;
           
     }

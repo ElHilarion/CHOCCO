@@ -14,6 +14,12 @@
             border-color: #fff;
         }
     }
+
+    &:hover{
+        .fixed-menu__link{
+            border-color: #fff;
+        }
+    }
 }
 
 .fixed-menu__link{
@@ -23,6 +29,8 @@
     border: rem(1px) solid transparent;
     display: block;
     position: relative;
+
+    
 
     &:before{
         content: "";
@@ -35,5 +43,25 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+.fixed-menu--shadowed .fixed-menu__link{
+    &::before{
+        background: #000;
+    }
+}
+
+.fixed-menu--shadowed .fixed-menu__item{
+
+    &--active{
+        .fixed-menu__link{
+            border-color: #000;
+        }
+    }
+    &:hover{
+        .fixed-menu__link{
+            border-color: #000;
+        }
     }
 }

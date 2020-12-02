@@ -1,7 +1,11 @@
+.map__section{
+    position: relative;
+}
 .map{
     position: relative;
     width: 100%;
-    height: rem(872px);
+    height: 27.4444rem;
+    top: -122px;
     
     @include tablets{
         margin-top: -26%;
